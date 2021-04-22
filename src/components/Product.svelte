@@ -2,6 +2,11 @@
     export let price;
     export let stocked;
     export let name;
+    export let onAddButtonClick;
+
+    let handleAddButtonClick = () => {
+        onAddButtonClick(price);
+    };
 </script>
 
 <style>
@@ -34,11 +39,13 @@
 </style>
 
 <tr>
-    <td>{name}</td>
-    <td>{price}</td>
     {#if stocked}
-    <button class="green-button">Add</button>
+        <td>{name}</td>
+        <td>{price} €</td>
+        <button class="green-button" on:click={handleAddButtonClick}>Add</button>
     {:else}
-    <button class="disabled-button">Add</button>
+        <td style="color:red">{name}</td>
+        <td>{price} €</td>
+        <button class="disabled-button">Add</button>
     {/if}
 </tr>

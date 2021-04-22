@@ -2,16 +2,10 @@
     import Product from './Product.svelte';
 
     export let products;
+    export let filterText;
+    export let inStockOnly;
+    export let onAmountUpdate;
 </script>
-
-<!-- <style>
-	.productTableContainer {
-		width: 30%;
-        height: auto;
-        margin-top: 30px;
-	}
-
-</style> -->
 
 <table>
     <thead>
@@ -22,7 +16,17 @@
     </thead>
     <tbody>
         {#each products as product}
-        <Product {...product}/>
+            {#if product.name.indexOf(filterText) === -1}
+                <!-- Skips iteration -->
+            {:else if inStockOnly && !product.stocked}
+                <!-- Skips iteration -->
+            {:else}
+                <Product name={product.name}
+                price={product.price}
+                stocked={product.stocked}
+                onAddButtonClick={onAmountUpdate}
+                />
+           {/if}
         {/each}
     </tbody>
 </table>
