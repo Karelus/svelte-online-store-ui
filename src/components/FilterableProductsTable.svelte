@@ -19,9 +19,25 @@
 
     const handleEmptyButtonClick = () => {
         totalAmount = 0.0;
-    }
+    };
 
 </script>
+
+<style>
+    .emptyButton {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+</style>
 
 <div class="productTableContainer">
     <SearchBar 
@@ -37,8 +53,8 @@
         onAmountUpdate={handleTotalAmountUpdate}
 
     />
-    <p>{totalAmount} €</p>
+    <p>Total amount: {totalAmount} €</p>
     {#if totalAmount > 0}
-        <button on:click={handleEmptyButtonClick}>Empty Cart</button>
+        <button class="emptyButton" on:click={handleEmptyButtonClick}>Empty Cart</button>
     {/if}
 </div>
