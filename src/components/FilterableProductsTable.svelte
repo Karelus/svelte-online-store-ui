@@ -17,6 +17,10 @@
         totalAmount = currentAmount;
     };
 
+    const handleEmptyButtonClick = () => {
+        totalAmount = 0.0;
+    }
+
 </script>
 
 <div class="productTableContainer">
@@ -31,9 +35,10 @@
         filterText={filterText}
         inStockOnly={inStockOnly}
         onAmountUpdate={handleTotalAmountUpdate}
+
     />
     <p>{totalAmount} €</p>
     {#if totalAmount > 0}
-        <button>Empty Cart</button>
+        <button on:click={handleEmptyButtonClick}>Empty Cart</button>
     {/if}
 </div>
