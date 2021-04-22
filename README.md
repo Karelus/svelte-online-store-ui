@@ -1,5 +1,5 @@
 # About the application
-Small sport store UI built with React to showcase rendering and state management. Uses JS-object as a representation of JSON-payload from the API.
+Small sport store UI built with Svelte to showcase rendering and state management. Uses JS-object as a representation of JSON-payload from the API.
 
 ---
 
