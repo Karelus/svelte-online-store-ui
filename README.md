@@ -1,4 +1,5 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+# About the application
+Small sport store UI built with Svelte to showcase rendering and state management. Uses JS-object as a representation of JSON-payload from the API.
 
 ---
 
