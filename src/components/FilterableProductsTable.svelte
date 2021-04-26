@@ -3,6 +3,7 @@
     import SearchBar from './SearchBar.svelte';
 
     export let products;
+    
     let inStockOnly = false;
     let filterText = '';
     let totalAmount = 0.0;

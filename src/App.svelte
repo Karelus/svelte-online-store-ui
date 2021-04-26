@@ -9,7 +9,7 @@
     { price: 69.99, stocked: true, name: 'Joggers'},
     { price: 79.99, stocked: false, name: 'Volleyball'},
     { price: 29.99, stocked: true, name: 'Sweatpants'},
-    { price: 25.99, stocked: true, name: 'Shorts'},
+    { price: 25.99, stocked: true, name: 'Training Shorts'},
   	];
 
 </script>
