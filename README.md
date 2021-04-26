@@ -1,5 +1,5 @@
 # About the application
-Small sport store UI built with Svelte to showcase rendering and state management. Uses JS-object as a representation of JSON-payload from the API.
+Small filterable sportstore UI built with Svelte to showcase rendering and state management. Uses JS-object as a representation of JSON-payload from the API.
 
 ![image](https://user-images.githubusercontent.com/49402752/116085888-f2e86d80-a6a7-11eb-87ad-1c60c9bd42d9.png)
 ![image](https://user-images.githubusercontent.com/49402752/116085855-ebc15f80-a6a7-11eb-8ba3-06b104703d5a.png)
