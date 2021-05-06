@@ -26,7 +26,11 @@
 </style>
 
 <form>
-    <input class="searchBar" type=text placeholder="Search..." bind:value={filterText} on:input={handleInputChange} />
+    <input class="searchBar" 
+    type=text placeholder="Search..." 
+    bind:value={filterText} 
+    on:input={handleInputChange} 
+    />
     <p>
       <input type=checkbox bind:checked={inStockOnly} on:change={handleInStockChange} />
       {' '}

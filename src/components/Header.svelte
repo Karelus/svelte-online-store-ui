@@ -12,6 +12,5 @@
 </style>
 
 <div class="header">
-    <h2>Sporting Goods</h2>
+    <h2>E-Commerce</h2>
 </div>
-
